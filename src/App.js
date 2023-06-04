@@ -3,9 +3,9 @@ import Gallery from './Components/Gallery'
 import SearchBar from './Components/SearchBar'
 
 function App() {
-    const [search, setSearch] = useState('')
-    const [message, setMessage] = useState('Search for Music!')
-    const [data, setData] = useState([])
+    let [search, setSearch] = useState('')
+    let [message, setMessage] = useState('Search for Music!')
+    let [data, setData] = useState([])
 
     useEffect(() => {
       const fetchData = async () => {
